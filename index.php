@@ -25,7 +25,13 @@ require_once ("Config.php");
 //echo $aluno;
 
 //UPDATE
+//$usuario = new Usuario();
+//$usuario->loadById(6);
+//$usuario->update("professor", "fessor");
+//echo $usuario;
+
+//DELETE
 $usuario = new Usuario();
-$usuario->loadById(6);
-$usuario->update("professor", "fessor");
+$usuario->loadById(5);
+$usuario->delete();
 echo $usuario;
