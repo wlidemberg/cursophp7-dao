@@ -15,6 +15,17 @@ require_once ("Config.php");
 //echo json_encode($search);
 
 //Carrega  um usuário usando o login e a senha
+//$usuario = new Usuario();
+//$usuario->login("berg", "wl150680");
+//echo $usuario;
+
+//INSERT USUARIO COM STORED PROCEDURE
+//$aluno = new Usuario("alunoA", "150680");
+//$aluno->insert();
+//echo $aluno;
+
+//UPDATE
 $usuario = new Usuario();
-$usuario->login("berg", "wl150680");
+$usuario->loadById(6);
+$usuario->update("professor", "fessor");
 echo $usuario;
